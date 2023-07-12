@@ -1,0 +1,174 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.nav-area {
+  background-color: #21130d;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 6vh;
+  padding: 0 100px;
+}
+
+.nav-area ul {
+  display: flex;
+}
+
+.nav-area li {
+  list-style: none;
+}
+
+.nav-area li a {
+  text-decoration: none;
+  margin-right: 25px;
+  color: #fff;
+  font-weight: 400;
+}
+
+.menu-area {
+  background-color: #170d09;
+  overflow: hidden;
+}
+
+.menu-area ul {
+  display: flex;
+  /* gap: 55px; */
+  justify-content: center;
+  /* height: 10vh; */
+  align-items: center;
+}
+
+.menu-area li {
+  list-style: none;
+}
+
+.menu-area li:hover {
+  background-color: black;
+  cursor: pointer;
+}
+
+.menu-area li a {
+  text-decoration: none;
+  color: #fff;
+  padding: 20px;
+  font-size: 20px;
+  display: block;
+}
+
+.drop-down-area .dd-area-a {
+  text-decoration: none;
+  color: white;
+  display: block;
+  padding: 20px;
+  font-size: 20px;
+}
+.drop-down-area a {
+  text-decoration: none;
+  color: white;
+  display: block;
+}
+
+.drop-down-area:hover {
+  background-color: black;
+  /* cursor: pointer; */
+}
+
+.drop-down-content .drop-down-header {
+  background-color: rgb(19, 1, 1);
+  color: white;
+  padding: 10px 0 10px 112px;
+
+  /* text-align: center; */
+  /* margin-top: 1px; */
+}
+
+.dropdown-container {
+  display: flex;
+  justify-content: center;
+  height: 37vh;
+  align-items: center;
+  overflow: hidden;
+  gap: 50px;
+}
+
+.drop-down-content {
+  display: none;
+  position: absolute;
+  background-color: #fcf7f7;
+  width: 100%;
+  left: 0;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  /* margin-top: 1px; */
+}
+
+/* drop box h2 start */
+.drop-box1 h2,
+.drop-box2 h2,
+.drop-box3 h2,
+.drop-box4 h2,
+.drop-box5 h2,
+.drop-box6 h2,
+.drop-box7 h2,
+.drop-box8 h2 {
+  color: #170d09;
+  padding: 5px 0;
+}
+
+/* drop box h2 end */
+
+/* drop box  a start */
+.drop-box1 a,
+.drop-box2 a,
+.drop-box3 a,
+.drop-box4 a,
+.drop-box5 a,
+.drop-box6 a,
+.drop-box7 a,
+.drop-box8 a {
+  color: #170d09;
+  padding: 3px 0;
+  border-bottom: 1px dotted rgba(0, 0, 0, 0.09);
+}
+
+/* drop box  a end */
+
+.drop-box1
+  .drop-box2
+  .drop-box3
+  .drop-box4
+  .drop-box5
+  .drop-box6
+  .drop-box7
+  .drop-box8 {
+  display: flex;
+  flex-direction: column;
+  color: #170d09;
+}
+
+/* drob box hober start */
+
+.drop-box1 a:hover,
+.drop-box2 a:hover,
+.drop-box3 a:hover,
+.drop-box4 a:hover,
+.drop-box5 a:hover,
+.drop-box6 a:hover,
+.drop-box7 a:hover,
+.drop-box8 a:hover {
+  /* background-color: rgb(231, 243, 252); */
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.05);
+  color: rgb(3, 58, 3);
+}
+/* drop box hover end */
+
+.drop-down-area:hover .drop-down-content {
+  display: block;
+}
