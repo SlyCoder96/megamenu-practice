@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.nav-container {
+  width: 80%;
+  /* background-color: blueviolet; */
+  margin: auto;
+}
+
+.nav-container ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.nav-container li {
+  list-style: none;
+  font-size: 18px;
+  margin-right: 20px;
+  padding: 10px 0;
+}
+
+.nav-container li a {
+  color: white;
+  text-decoration: none;
+  background-color: brown;
+  display: block;
+  padding: 10px 25px;
+}
+
+.nav-container li a:hover {
+  /* transform: skew(20deg); */
+  animation: shake 2s;
+  animation-direction: alternate;
+  /* transform: rotate(0); */
+  /* transform: rotateZ("5deg"); */
+  /* opacity: 0.7; */
+}
+
+@keyframes shake {
+  0% {
+    transform: skewX(20deg);
+  }
+  100% {
+    transform: skewX(-20deg);
+  }
+}
+
+/* @keyframes skew {
+  0% {
+    transform: skew(20deg, 20deg);
+  }
+  100% {
+    transform: skew(-20deg, -20deg);
+  }
+} */
+
+/* .btn:hover {animation: roll 3s infinite;
+transform: rotate(30deg);
+opacity: .7;
+}
+
+@keyframes roll {
+0% {
+  transform: rotate(0);
+}
+100% {
+  transform: rotate(360deg);
+}
+} */
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  width: 100%;
+  left: 0;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content2 {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  margin-left: 110px;
+  margin-top: -44px;
+}
+
+.dropdown-content2 a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: black;
+}
+
+.dropdown-content2 a:hover {
+  background-color: black;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.service:hover .dropdown-content {
+  display: block;
+}
+
+.link1:hover .dropdown-content2 {
+  display: block;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: 1px solid black;
+  outline: none;
+  color: black;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+  overflow: hidden;
+}
